@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JAVASCRIPT </title>
+</head>
+<style>
+p{
+font-family: Arial,helvetica, sans-serif;
+letter-spacing:1px;
+text-transform:uppercase;
+text-align:center;
+border:2px solid rgb(0 0 200/0.6);
+background:rgb(0 0 200/0.6);
+color:rgb(255 255 255/1);
+box-shadow:1px 1px 2px rgb(0 0 200/0.4);
+border-radius:10px;
+padding:3px 10px;
+display:inline-block;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+<p> player 2:chris </p>
+<p id="demo"> </p>
+<p id="call"> </p>
+<p id="st"> </p>
+<h1> My first header </h1>
+<p> My first paragraph </p>
+<button onclick="window.print()"> Print this page </button>
+<h1 class="akin"> My first header </h1>
+<p class="sam"> My first paragraph </p>
+<button onclick="window.print()"> Print this page </button>
+<div class="Word-container">
+<p> I love Js </p>
+<p> I love css </p>
+<p> I love html </p>
+</div>
+<p id="demo"> </p>
+<p id="ko"> </p>
+<p id="kd"> </p>
+<p id="ka"> </p>
+<p id="kc"> </p>
+<p id="ke"> </p>
+<p id="kf"> </p>
+<p id="kg"> </p>
+<p id="kh"> </p>
+<p id="ki"> </p>
+<p id="kj"> </p>
+<p id="kk"> </p>
+<p id="db"> </p>
+<p id="dq"> </p>
+<p id="dg"> </p>
+<p id="dh"> </p>
+<p id="aa"> </p>
+<p id="ab"> </p>
+<p id="ac"> </p>
+<p id="ad"> </p>
+<p id="hg"> </p>
+<p id="san"></p>
+<p id="toh"></p>
+<button>click me</button>
+<script>
+const para=document.querySelector("p");
+para.addEventListener("click", updateName);
+function updateName(){
+const name=prompt("Enter a new name");
+para.textContent=`player 2:${name}`;
+}
+window.alert(5+6);
+document.write(10+20);
+document.getElementById("demo").innerHTML="Good Morning!";
+console.log(200>100);
+window.alert("My name is IVV");
+document.write("My name is IVV");
+document.getElementById("call").innerHTML="My name is IVV";
+console.log("My name is IVV");
+document.getElementById("st").innerHTML="2*1=2";
+let richy=document.querySelector('button');
+let akin=document.querySelector('.akin');
+let sam=document.querySelector('.sam');
+console.log(richy);
+console.log(akin);
+console.log(sam);
+let IVV=document.querySelector('.Word-container');
+let paragraphs=IVV.querySelectorAll('p');
+console.log(paragraphs);
+let x=2**4;
+x++
+document.getElementById("demo").innerHTML=x;
+let a=5;
+let y=6; 
+let z=a+=y;
+document.getElementById("ko").innerHTML=z;
+let e=5;
+let c=6; 
+let b=e-=y;
+document.getElementById("kd").innerHTML=b;
+let d=100;
+let f=20; 
+let q=d**=y;
+document.getElementById("ka").innerHTML=q;
+let g=100;
+let h=20; 
+let i=d/=y;
+document.getElementById("kc").innerHTML=i;
+let j=100;
+let k=20; 
+let l=d%=y;
+document.getElementById("ke").innerHTML=l;
+let m=5;
+document.getElementById("kf").innerHTML=(m!=="5");
+let o=6;
+let p=3; 
+document.getElementById("kg").innerHTML=!(0==p);
+const age=18;
+const beverage= age>=21 ? "Beer" : "Juice";
+document.write(beverage);
+document.getElementById("kh").innerHTML=
+'John is' + typeof 'john' + '<br>' +
+'3.14 is' + typeof 3.14 + '<br>' +
+'NaN is' + typeof NaN + '<br>' +
+'false is' + typeof false + '<br>' +
+'[1,2,3] is' + typeof [1,2,3] + '<br>' +
+"{name:'john',age:20} is " + typeof {name:'john', age:20} + '<br>' +
+'function(){} is ' + typeof function(){} + '<br>' + 'myCar is' + typeof myCar  + '<br>' + 'null is' + typeof null;
+let price1=10;
+let price2=8; 
+let peice3=10*2;
+let totalPrice=38;
+let averagePrice=totalPrice/2;
+let discount=5;
+let finalPrice=totalPrice-discount;
+document.getElementById("ki").innerHTML='Total price is:' + totalPrice;
+document.getElementById("kj").innerHTML='Average price is:' + averagePrice;
+document.getElementById("kk").innerHTML='Final price is:' + finalPrice; 
+let markWeightdata1=79;
+let markWeightdata2=95;
+let markHeightdata1=1.69;
+let markHeightdata2=1.86;
+let johnWeightdata1=92;
+let johnWeightdata2=85;
+let johnHeightdata1=1.95;
+let johnHeightdata2=1.96;
+let marksBMI=markWeightdata1/markHeightdata1**2;
+let markxBMI=markWeightdata2/markHeightdata2**2;
+let johnsBMI=johnWeightdata1/johnHeightdata1**2;
+let johnxBMI=johnWeightdata2/johnHeightdata2**2;
+let markssBMI=markWeightdata1/(markHeightdata1*markHeightdata1);
+let markcBMI=markWeightdata2/(markHeightdata2*markHeightdata2);
+let johnssBMI=johnWeightdata1/(johnHeightdata1*johnHeightdata1);
+let johncBMI=johnWeightdata2/(johnHeightdata2*johnHeightdata2);
+let higherBMI=marksBMI>johnsBMI?"markBMI is greater than john's":"JohnBMI is greater than Mark's";
+
+document.getElementById("db").innerHTML='Marks BMI is:' + marksBMI;
+document.getElementById("aa").innerHTML='Markx BMI is:' + markxBMI;
+document.getElementById("dq").innerHTML='Johns BMI is:' + johnsBMI;
+document.getElementById("ab").innerHTML='Johnx BMI is:' + johnxBMI;
+document.getElementById("dg").innerHTML='Mark BMI is:' + markssBMI;
+document.getElementById("ab").innerHTML='Markc BMI is:' + markcBMI;
+document.getElementById("ac").innerHTML='john BMI is:' + johnssBMI;
+document.getElementById("ad").innerHTML='johnc BMI is:' + johncBMI;
+document.getElementById("hg").innerHTML=higherBMI;//**
+let btn=document.querySelector('button');
+btn.addEventListener('click',function(){
+let studentScore = prompt('Enter your score');
+let output=studentScore >= 60 ?"congratulation you have passed your exam✌" : "sorry,try again next time🤣";
+console.log(output);
+});
+const fruit=["orange","banana","mango"];
+fruit.pop();
+document.getElementById("san").innerHTML=fruit;
+const car={type:"toyota",color:"blue",weight:55};
+document.write(car.type);
+console.log(car);
+function myFuntion(p1,p2){
+    return p1*p2;
+}
+let result=myFuntion(3,4);
+document.getElementById("toh").innerHTML=result;
+</script>
+</button>
+</body>
+</html>

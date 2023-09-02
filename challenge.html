@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JAVASCRIPT </title>
+</head>
+<style>
+ .box{
+    width:30%;
+    border: 1px solid black;
+    height: 50px;
+    transition: all .4s ease;
+ }
+</style>
+<body>
+<!-- <button> Click Me</button> 
+<p id="event"></p>
+<button>click me!</button>-->
+<div class="box"></div>
+<p class="p"> </p>
+<textarea name="" id="wordInput" cols="30" rows="10"></textarea>
+<input type="text" class="input" placeholder="your style here">
+<script>
+// let btn=document.querySelector('button');
+// btn.addEventListener('click',function(){
+// let studentScore = prompt('Enter your score');
+// let output=studentScore >= 60 ?"congratulation you have passed your exam✌" : "sorry,try again next time🤣";
+// console.log(output);
+// });
+//const gun=document.querySelector('#event');
+//const btn=document.querySelector('button');
+//btn.addEventListener('click',function(){
+ //   gun.textContent=new Date();
+//});
+    const box = document.querySelector('.box');
+    const input = document.querySelector('.input');
+    const wordInput = document.querySelector('#wordInput');
+    const word = document.querySelector('.p');
+
+        wordInput.addEventListener('input', () => {
+            const wordValue = wordInput.value;
+        word.textContent = `${wordValue}`;
+        box.appendChild(word);
+        })
+    input.addEventListener('input',function(){
+        const ivv = input.value;
+        box.style = `${ivv}`;
+    });
+</script>
+</body>
+</html>

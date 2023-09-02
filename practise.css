@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.big{
+    display:flex;
+    justify-content: center;
+    align-item:center;
+    background: white;
+}
+#yo{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+h1{
+    position: relative;
+    font-size: 50px;
+    color: white;
+    -webkit-text-stroke: 0.3vw #8ea38d;
+    text-transform: uppercase;
+}
+h1::after{
+    content:attr(data-text);
+    position:absolute;
+    top:0;
+    left: 0;
+    width:0;
+    height: 100%;
+    color: #8ea38d;
+    -webkit-text-stroke:0vw #8ea38d;
+    border-right:2px solid #8ea38d;
+    overflow:hidden;
+    animation:animate 1s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width:100%;
+    }
+}

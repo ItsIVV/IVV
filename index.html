@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> JAV first project </title>
+<link rel="stylesheet"href="jav.css">
+<script src="https://kit.fontawesome.com/fc9453b3f6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/logo2.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Matiminu</span><br>Michael from Nigeria</h1>
+        </div>
+    </div>
+</div>
+<!-----------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+              <img src="image/call.png">  
+            </div>
+            <div class="about-col-2">
+                <h1 class="colorA"> About Me </h1>
+                <p> I'm a front-end developer, 
+                    I specialize in crafting engaging and user-friendly interfaces that seamlessly connect users with digital experiences. 
+                    With a strong foundation in HTML, CSS, and JavaScript, I'm dedicated to creating responsive and visually appealing websites and web applications. 
+                    My passion for staying updated with the latest trends and technologies allows me to deliver innovative and accessible solutions. 
+                    I thrive in collaborative environments.</p>
+                    <div class="tab-title">
+                        <p class="tab-links break-up" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents skill-on" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>UI/UX Design Training at Tech Mind</li>
+                            <li><span>2021-2022</span><br>Team lead at StarApp LLC</li>
+                            <li><span>2020-2021</span><br>UI/UX Design Executive at Techmind</li>
+                        </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+                            </ul>
+                            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- services-------------------- -->
+<div id="services">
+    <div id="container">
+        <h1 class="colorA"> My Services </h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p> I help my clients gain valuable insights from their website and user data, enabling informed decision-making and business growth.</p>
+            <a href="#">Learn more</a>
+            </div> 
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p> Crafting and building websites and web applications that are functional, visually appealing, and user-friendly for online experiences.</p>
+            <a href="#">Learn more</a>
+            </div> 
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p> Creating mobile-friendly websites and applications for a
+                    seamless user experience on various devices</p>
+            <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!-------------portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("break-up");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("skill-on");
+        }
+        event.currentTarget.classList.add("break-up");
+        document.getElementById(tabname).classList.add("skill-on");
+    }
+</script>
+</body>
+</html>

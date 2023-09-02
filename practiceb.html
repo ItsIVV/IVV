@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> pratice box</title>
+<link rel="stylesheet"href="fast.css">
+</head>
+<body>
+    <div id="or">
+        <img src="image/nfruits6.png">
+    </div>
+<div id="GOD">
+    <h2> <span>Fruit🍉</span> Store🥝</h2>
+    <div id="container">
+        <input type="text"pLaceholder="Search For Fruit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="27" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+        <button type="submit">Search</button>
+        <p id="output"> </p>
+        </div>
+</div>
+<script>
+const searchInput=document.querySelector('input');
+const searchBtn=document.querySelector('button');
+const outPut=document.querySelector('#output');
+searchBtn.addEventListener('click', function(){
+let fruit=searchInput.value;
+    switch(fruit){
+    case "Apple":
+        outPut.textContent="Apple is available 🍎🍏";
+        break;
+    case "Mango":
+        outPut.textContent="Mango is available🥭";
+        break;
+    case "":
+        outPut.textContent="Please fill the field above";
+        break;
+    case "Banana":
+        outPut.textContent="Banana isn't available🍌";
+        break;
+    case "Orange":
+        outPut.textContent="Orange is available";
+        break;
+    case "Pineapple":
+        outPut.textContent="Pineapple isn't available🍍";
+        break;
+        default:
+            outPut.textContent= searchInput.value + "Out of stock😢";
+}
+});
+
+</script>
+</body>
+</html>
